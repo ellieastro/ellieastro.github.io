@@ -1,3 +1,5 @@
 # Ellen Leitinger
 
-<img src="Website/avatar.jpg" alt='Ellie' width="100"/>
+<p align="center">
+  <img src="Website/avatar.jpg" alt='Ellie' width="200"/>
+</p>
