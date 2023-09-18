@@ -1,4 +1,4 @@
-#<p style="text-align: center;">Ellen Leitinger</p>
+# Ellen Leitinger
 <p align="center">
   <img src="Website/avatar.jpg" alt='Ellie' width="200"/>
 </p>
