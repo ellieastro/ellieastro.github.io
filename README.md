@@ -1,4 +1,4 @@
 # Ellen Leitinger
-
-![Thumbnail of Cayman]("Website/avatar.jpg")
-
+<p align="center">
+  <img src="Website/avatar.jpg" alt='Ellie' width="200"/>
+</p>
