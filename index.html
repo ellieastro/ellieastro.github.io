@@ -11,7 +11,13 @@
             text-align: center; /* Center-align the header content horizontally */
         }
 
-        h1 {
+        .top-section {
+            background-color: lightblue; /* Set the background color of the top section */
+            padding: 20px; /* Add padding for spacing */
+        }
+
+        h1, p, a {
+            color: black; /* Keep the text color black */
             font-family: 'Libre Baskerville', serif; /* Apply the desired font */
         }
 
@@ -23,10 +29,12 @@
 </head>
 <body>
 <header>
-    <h1>Ellen Leitinger</h1>
-    <p>PhD student in Astrophysics</p>
-    <p><a href="mailto:ellen.leitinger@uq.net.au">ellen.leitinger@uq.net.au</a></p>
-    <img src="Website/avatar.jpg" alt="Ellen Leitinger" width="300" height="300">
+    <div class="top-section">
+        <h1>Ellen Leitinger</h1>
+        <p>PhD student in Astrophysics</p>
+        <p><a href="mailto:ellen.leitinger@uq.net.au">ellen.leitinger@uq.net.au</a></p>
+        <img src="Website/avatar.jpg" alt="Ellen Leitinger" width="300" height="300">
+    </div>
 </header>
 </body>
 </html>
