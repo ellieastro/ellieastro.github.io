@@ -6,36 +6,33 @@
     <title>Ellen Leitinger - Astrophysics</title>
     <link href="https://fonts.googleapis.com/css?family=Libre+Baskerville" rel="stylesheet">
     <style>
-        header {
-            text-align: center; 
-        }
-
         .top-section {
             background-color: lightblue;
             padding: 20px;
-        }
-
-        h1, p, a {
-            color: black;
-            font-family: 'Libre Baskerville', serif;
+            display: flex; 
+            align-items: center; 
         }
 
         img {
-            display: block;
-            margin: 0 auto;
             max-width: 300px;
+            margin-right: 20px;
+        }
+
+        .text-content {
+            flex: 1;
+            color: black;
+            font-family: 'Libre Baskerville', serif;
         }
     </style>
 </head>
 <body>
-<header>
-    <div class="top-section">
+<div class="top-section">
+    <img src="Website/avatar.jpg" alt="Ellen Leitinger">
+    <div class="text-content">
         <h1>Ellen Leitinger</h1>
         <p>PhD student in Astrophysics</p>
-        <p><a href="mailto:ellen.leitinger@uq.net.au">ellen.leitinger@uq.net.au</a></p>
-        <img src="Website/avatar.jpg" alt="Ellen Leitinger">
+        <p>ellen.leitinger@uq.net.au</p>
     </div>
-</header>
+</div>
 </body>
 </html>
-
