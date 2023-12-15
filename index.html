@@ -54,14 +54,57 @@
                 font-size: 1.5vw;
                 white-space: nowrap;
             }
+
+            .large-text-area2 { /* Any large text areas have a padding so they don't hit the sides of the webpage */
+                flex: 1;
+                padding: 3vw;
+            }     
+            .text-content p { /* Add a buffer at the end of each text paragraph */
+                margin-bottom: 1vw;
+            }
+            body { /* Set the background to be black */
+                background-color: black;
+                font-family: 'Lora', sans-serif;
+            }
+            body, p, h1, h2, h3, a { /* Set the text colour to be white for all the text elements */
+                color: white;
+            }
+            a {
+                color: cyan; /* Set the hyperlink color to light blue */
+                text-decoration: none; /* Remove hyperlink underline */
+            }
+            a:hover {
+                text-decoration: underline; /* Use underline only on the hover */
+            }
+            h1, p, a { /* Adjust the margins for the header, paragraphs and hyperlinks */
+                margin: 0vw; 
+            }
+            h2 { /* Centre the headers */
+                text-align: center;
+            }
+            .footer { /* Set the conditions for creating a footer box */
+                display: flex; 
+                justify-content: left; 
+                align-items: left; 
+            }
+            .footer-image1 { /* Formatting the logos in the footer UQ */
+                margin-right: 2vw;
+                border: 2px solid black;
+                box-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+                width: 12vw;
+                height: 12vw;
+            }
+            .footer-image2 { /* Formatting the logos in the footer ESO */
+                margin-right: 2vw;
+                border: 2px solid black;
+                box-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+                width: 10vw;
+                height: 12vw;
+            }
         }
 
-
-
         
-
-        
-            /* Section to describe how the format will change for the PC version */
+        /* Section to describe how the format will change for the PC version */
         @media (min-width: 769px) {
             .large-text-area {
                 text-align: left;
@@ -70,106 +113,76 @@
                 align-items: flex-start;
                 width: 100%; /* Make sure it takes up the full width of the container */
             }
-    
-            .text-content,
-            .image-section {
-                flex: 1;
-                padding: 0 1vw; /* Adjust as needed for spacing between text and image */
-            }
-    
-            .text-content {
-                text-align: left;
-            }
-    
-            .image-section {
-                text-align: right;
-            }
-    
-            .image-section img {
-                max-width: 100%;
-                height: auto;
-            }
-    
-            .image-section figcaption {
-                text-align: left;
-            }
-        }
 
-        
-        .top-section { /* Header including background with gradient */
-            background: linear-gradient(to bottom, darkblue, rgb(0, 165, 150));
-            padding: 5vw;
-            display: flex; 
-            align-items: center; 
-            flex: 1;
-        }
-        .large-text-area { /* Any large text areas have a padding so they don't hit the sides of the webpage */
-            flex: 1;
-            padding: 3vw;
-        }
-        .large-text-area2 { /* Any large text areas have a padding so they don't hit the sides of the webpage */
-            flex: 1;
-            padding: 3vw;
-        }
-        .text-content { /* Formatting for the text itself, within the large-text-areas */
-            color: white;
-            font-family: 'Lora', sans-serif;
-            text-align: justify; 
-            padding-left: 5vw; 
-            padding-right: 5vw;
-        }        
-        .text-content p { /* Add a buffer at the end of each text paragraph */
-            margin-bottom: 1vw;
-        }
-        body { /* Set the background to be black */
-            background-color: black;
-            font-family: 'Lora', sans-serif;
-        }
-        body, p, h1, h2, h3, a { /* Set the text colour to be white for all the text elements */
-            color: white;
-        }
-        a {
-            color: cyan; /* Set the hyperlink color to light blue */
-            text-decoration: none; /* Remove hyperlink underline */
-        }
-        a:hover {
-            text-decoration: underline; /* Use underline only on the hover */
-        }
-        h1, p, a { /* Adjust the margins for the header, paragraphs and hyperlinks */
-            margin: 0vw; 
-        }
-        h2 { /* Centre the headers */
-            text-align: center;
-        }
-        img { /* Format the images */
-            max-width: 70vw;
-            height: auto;
-            border: 3px solid black;
-            box-shadow: 5px 5px 10px rgba(0,0,0,0.3);
-        }
-        figcaption {
-            font-family: 'Lora', sans-serif;
-        }
-        .footer { /* Set the conditions for creating a footer box */
-            display: flex; 
-            justify-content: left; 
-            align-items: left; 
-        }
-        .footer-image1 { /* Formatting the logos in the footer UQ */
-            margin-right: 2vw;
-            border: 2px solid black;
-            box-shadow: 2px 2px 4px rgba(0,0,0,0.3);
-            width: 12vw;
-            height: 12vw;
-        }
-        .footer-image2 { /* Formatting the logos in the footer ESO */
-            margin-right: 2vw;
-            border: 2px solid black;
-            box-shadow: 2px 2px 4px rgba(0,0,0,0.3);
-            width: 10vw;
-            height: 12vw;
-        }
-}
+            .top-section { /* Header including background with gradient */
+                background: linear-gradient(to bottom, darkblue, rgb(0, 165, 150));
+                padding: 5vw;
+                display: flex; 
+                align-items: center; 
+                flex: 1;
+            }
+            .large-text-area2 { /* Any large text areas have a padding so they don't hit the sides of the webpage */
+                flex: 1;
+                padding: 3vw;
+            }
+            .text-content { /* Formatting for the text itself, within the large-text-areas */
+                color: white;
+                font-family: 'Lora', sans-serif;
+                text-align: justify; 
+                padding-left: 5vw; 
+                padding-right: 5vw;
+            }        
+            .text-content p { /* Add a buffer at the end of each text paragraph */
+                margin-bottom: 1vw;
+            }
+            body { /* Set the background to be black */
+                background-color: black;
+                font-family: 'Lora', sans-serif;
+            }
+            body, p, h1, h2, h3, a { /* Set the text colour to be white for all the text elements */
+                color: white;
+            }
+            a {
+                color: cyan; /* Set the hyperlink color to light blue */
+                text-decoration: none; /* Remove hyperlink underline */
+            }
+            a:hover {
+                text-decoration: underline; /* Use underline only on the hover */
+            }
+            h1, p, a { /* Adjust the margins for the header, paragraphs and hyperlinks */
+                margin: 0vw; 
+            }
+            h2 { /* Centre the headers */
+                text-align: center;
+            }
+            img { /* Format the images */
+                max-width: 70vw;
+                height: auto;
+                border: 3px solid black;
+                box-shadow: 5px 5px 10px rgba(0,0,0,0.3);
+            }
+            figcaption {
+                font-family: 'Lora', sans-serif;
+            }
+            .footer { /* Set the conditions for creating a footer box */
+                display: flex; 
+                justify-content: left; 
+                align-items: left; 
+            }
+            .footer-image1 { /* Formatting the logos in the footer UQ */
+                margin-right: 2vw;
+                border: 2px solid black;
+                box-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+                width: 12vw;
+                height: 12vw;
+            }
+            .footer-image2 { /* Formatting the logos in the footer ESO */
+                margin-right: 2vw;
+                border: 2px solid black;
+                box-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+                width: 10vw;
+                height: 12vw;
+            }
     </style>
   
 <!-- Header section including photograph, name, affiliations and contact email -->
