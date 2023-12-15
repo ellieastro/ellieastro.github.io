@@ -57,17 +57,26 @@
         }
 
         /* Section to describe how the body of the webpage will look on PC versions */
+        .content-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            max-width: 1200px; /* Adjust the max-width as needed */
+            margin: 0 auto; /* Center the container */
+        }
+        
         .top-section { /* Header including background with gradient */
             background: linear-gradient(to bottom, darkblue, rgb(0, 165, 150));
             padding: 5vw;
             display: flex; 
             align-items: center; 
+            flex: 1;
         }
         .large-text-area { /* Any large text areas have a padding so they don't hit the sides of the webpage */
+            flex: 1;
             padding: 3vw;
         }
         .text-content { /* Formatting for the text itself, within the large-text-areas */
-            flex: 1;
             color: white;
             font-family: 'Lora', sans-serif;
             text-align: justify; 
@@ -75,7 +84,7 @@
             padding-right: 5vw;
         }        
         .text-content p { /* Add a buffer at the end of each text paragraph */
-            margin-bottom: 2vw;
+            margin-bottom: 1vw;
         }
         body { /* Set the background to be black */
             background-color: black;
@@ -120,7 +129,7 @@
             border: 2px solid black;
             box-shadow: 2px 2px 4px rgba(0,0,0,0.3);
             width: 10vw;
-            height: 12vw
+            height: 12vw;
         }
 }
     </style>
@@ -129,6 +138,7 @@
     
 </head>
 <body>
+<div class="content-container">
 <div class="top-section">
     <img src="Website/avatar.jpg" alt="Ellen Leitinger" style="width: 30vw;">
     <div class="text-content" style="text-align: center;">
@@ -213,7 +223,7 @@
     </div>
     <div class="footer-text" style="color: white; white-space: nowrap;"><em>Last updated: December 2023</em></div>
 </div>
-
+</body>
 
     
 </html>
