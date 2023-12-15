@@ -56,6 +56,33 @@
             }
         }
 
+           @media (min-width: 769px) {
+        .large-text-area {
+            display: flex;
+            flex-direction: row;
+            align-items: flex-start;
+        }
+
+        .large-text-area .text-content {
+            flex: 1;
+            padding-right: 2vw; /* Adjust as needed for spacing between text and image */
+        }
+
+        .large-text-area .image-section {
+            flex: 1;
+            padding-left: 2vw; /* Adjust as needed for spacing between text and image */
+        }
+
+        .large-text-area img {
+            max-width: 100%; /* Ensure the image does not exceed its container */
+            height: auto;
+        }
+
+        .large-text-area figcaption {
+            text-align: left;
+        }
+        }
+
         /* Section to describe how the body of the webpage will look on PC versions */
         .content-container {
             display: flex;
