@@ -106,20 +106,16 @@
         
         /* Section to describe how the format will change for the PC version */
         @media (min-width: 769px) {
-            .large-text-area {
-                text-align: left;
-                display: flex;
-                flex-direction: row;
-                align-items: flex-start;
-                width: 100%; /* Make sure it takes up the full width of the container */
-            }
-
             .top-section { /* Header including background with gradient */
                 background: linear-gradient(to bottom, darkblue, rgb(0, 165, 150));
                 padding: 5vw;
                 display: flex; 
                 align-items: center; 
                 flex: 1;
+            }
+            .large-text-area { /* Any large text areas have a padding so they don't hit the sides of the webpage */
+                flex: 1;
+                padding: 3vw;
             }
             .large-text-area2 { /* Any large text areas have a padding so they don't hit the sides of the webpage */
                 flex: 1;
