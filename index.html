@@ -59,26 +59,29 @@
 
 
         
+        /* Section to describe how the format will change for the PC version */
+        @media (min-width: 769px) {
 
-    @media (min-width: 769px) {
-        .large-text-area {
-            display: flex;
-            flex-direction: row;
-            align-items: flex-start;
-        }
-
-        .large-text-area .text-content,
-        .large-text-area .image-section {
+        .text-content,
+        .image-section {
             flex: 1;
             padding: 0 2vw; /* Adjust as needed for spacing between text and image */
         }
 
-        .large-text-area img {
-            max-width: 100%; /* Ensure the image does not exceed its container */
+        .text-content {
+            text-align: left;
+        }
+
+        .image-section {
+            text-align: right;
+        }
+
+        .image-section img {
+            max-width: 100%;
             height: auto;
         }
 
-        .large-text-area figcaption {
+        .image-section figcaption {
             text-align: left;
         }
     }
