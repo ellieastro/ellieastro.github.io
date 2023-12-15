@@ -49,14 +49,19 @@
                 font-size: 2vw;
                 font-family: 'Lora', sans-serif;
             }
-            .footer-image {
+            .footer-image1 {
                 width: 30vw;
+                max-width: 30vw;
+                border: 0.5vw solid black;
+            }
+            .footer-image2 {
+                width: 25vw;
                 max-width: 30vw;
                 border: 0.5vw solid black;
             }
             .footer-text {
                 color: white;
-                font-size: 1vw;
+                font-size: 1.5vw;
                 white-space: nowrap;
         }
         }
@@ -113,10 +118,17 @@
             justify-content: left; 
             align-items: left; 
         }
-        .footer-image { /* Formatting the logos in the footer */
+        .footer-image1 { /* Formatting the logos in the footer */
             margin-right: 2vw;
             border: 2px solid black;
             box-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+            style="width: 10%;
+        }
+        .footer-image2 { /* Formatting the logos in the footer */
+            margin-right: 2vw;
+            border: 2px solid black;
+            box-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+            style="width: 8%;
         }
 }
     </style>
@@ -204,8 +216,8 @@
     
 <div class="footer-box" style="background: linear-gradient(to top, darkblue, rgb(0, 165, 150)); padding: 1vw; display: flex; justify-content: space-between; align-items: flex-end;">
     <div class="footer">
-        <img class="footer-image" src="Website/UQ.png" alt="UQ logo" style="width: 10%;">
-        <img class="footer-image" src="Website/ESO.png" alt="ESO logo" style="width: 8%;">
+        <img class="footer-image1" src="Website/UQ.png" alt="UQ logo">
+        <img class="footer-image2" src="Website/ESO.png" alt="ESO logo">
     </div>
     <div class="footer-text" style="color: white; white-space: nowrap;"><em>Last updated: December 2023</em></div>
 </div>
