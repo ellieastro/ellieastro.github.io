@@ -174,12 +174,22 @@
                 padding-left: 5vw; 
                 padding-right: 5vw;
             }
+            .image-section-wrap { /* Format the images */
+                display: flex;
+                flex-direction: column;
+                align-items: flex-end;
+            }
             .text-content-wrap { /* Formatting for the text itself, within the large-text-areas */
                 color: white;
                 font-family: 'Lora', sans-serif;
-                text-align: justify; 
-                padding-left: 5vw; 
+                text-align: justify;
+                padding-left: 5vw;
                 padding-right: 5vw;
+                flex: 1;
+            }
+            .image-section-wrap figure {
+                margin-left: auto; /* Move the image to the right side of the container */
+                margin-right: 0; /* Reset margin on the right side */
             }
             .text-content p { /* Add a buffer at the end of each text paragraph */
                 margin-bottom: 1vw;
@@ -217,11 +227,11 @@
                 display: flex;
                 justify-content: center;
             }
-            .image-section-wrap { /* Format the images */
+/*             .image-section-wrap { 
                 display: flex;
                 justify-content: center;
                 float: right;
-            }
+            } */
             figcaption {
                 font-family: 'Lora', sans-serif;
             }
