@@ -174,22 +174,23 @@
                 padding-left: 5vw; 
                 padding-right: 5vw;
             }
-            .image-section-wrap { /* Format the images */
+            .image-section-wrap {
                 display: flex;
-                flex-direction: column;
-                align-items: flex-end;
+                justify-content: center;
             }
-            .text-content-wrap { /* Formatting for the text itself, within the large-text-areas */
+            
+            .image-section-wrap img {
+                float: right; /* Float the image to the right */
+                margin: 0 0 1em 1em; /* Adjust margin as needed for spacing */
+            }
+            
+            .text-content-wrap {
                 color: white;
                 font-family: 'Lora', sans-serif;
-                text-align: justify;
-                padding-left: 5vw;
+                text-align: justify; 
+                padding-left: 5vw; 
                 padding-right: 5vw;
                 flex: 1;
-            }
-            .image-section-wrap figure {
-                margin-left: auto; /* Move the image to the right side of the container */
-                margin-right: 0; /* Reset margin on the right side */
             }
             .text-content p { /* Add a buffer at the end of each text paragraph */
                 margin-bottom: 1vw;
