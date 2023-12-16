@@ -172,18 +172,21 @@
             .large-text-area {
                 display: grid;
                 grid-template-columns: 1fr 1fr; /* Two columns with equal width */
-                gap: 20px; /* Adjust the gap between columns as needed */
+                gap: 5px; /* Adjust the gap between columns as needed */
             }
             .text-content-wrap {
                 color: white;
                 font-family: 'Lora', sans-serif;
                 text-align: justify;
-                padding: 0 5vw; /* Adjust padding as needed */
+                padding: 0 2vw;
             }
             .image-section-wrap {
                 display: flex;
-                justify-content: flex-end; /* Align images to the right of the column */
+                justify-content: flex-end;
                 align-items: flex-start;
+            }
+            .image-section-wrap img {
+                max-width: 100%;
             }
 /*             .large-text-area {
                 justify-content: center;
@@ -235,8 +238,8 @@
             }
             figcaption {
                 font-family: 'Lora', sans-serif;
-                padding-left: 20vw; 
-                padding-right: 20vw;
+                padding-left: 2vw; 
+                padding-right: 2vw;
             }
             .footer { /* Set the conditions for creating a footer box */
                 display: flex; 
