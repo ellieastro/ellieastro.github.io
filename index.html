@@ -177,6 +177,7 @@
                 display: flex;
                 justify-content: center;
                 align-items: flex-start; /* Align items at the start of the flex container */
+                flex-wrap: wrap;
             }
             
             .image-section-wrap {
@@ -191,6 +192,7 @@
                 padding-left: 5vw; 
                 padding-right: 5vw;
                 flex: 1;
+                max-width: calc(100% - 300px);
             }
             .text-content p { /* Add a buffer at the end of each text paragraph */
                 margin-bottom: 1vw;
@@ -333,7 +335,7 @@
     
 <!-- Footer box with ESO and UQ logos and update date -->
     
-<div class="footer-box" style="background: linear-gradient(to top, rgba(0, 0, 139, 0.8), rgba(101, 51, 166,0.8)); padding: 1vw; display: flex; justify-content: space-between; align-items: flex-end;">
+<div class="footer-box" style="background: linear-gradient(to top, rgba(0, 0, 139, 0.6), rgba(101, 51, 166,0.6)); padding: 1vw; display: flex; justify-content: space-between; align-items: flex-end;">
     <div class="footer">
         <img class="footer-image1" src="Website/UQ.png" alt="UQ logo">
         <img class="footer-image2" src="Website/ESO.png" alt="ESO logo">
