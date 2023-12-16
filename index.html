@@ -33,6 +33,14 @@
                 flex: 1;
                 position: relative;
             }
+            .top-section::after { /* Use ::after pseudo-element for the image credit */
+                content: "Image credit: Gaia DPAC";
+                position: absolute;
+                top: 0;
+                right: 0;
+                font-size: 0.6em;
+                color: rgba(255, 255, 255, 0.3);
+            }
             
             .top-section img { /* Adjusting the size of my photograph based on the dimensions of the mobile webpage */
                 max-width: 70vw;
