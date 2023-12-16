@@ -159,8 +159,10 @@
                 color: rgba(255, 255, 255, 0.3);
             }
             .large-text-area { /* Any large text areas have a padding so they don't hit the sides of the webpage */
-                flex: 1;
-                padding: 3vw;
+                display: flex;
+                justify-content: center;
+                align-items: flex-start; /* Align items at the start of the flex container */
+                flex-wrap: wrap;
             }
             .large-text-area2 { /* Any large text areas have a padding so they don't hit the sides of the webpage */
                 flex: 1;
@@ -173,18 +175,10 @@
                 padding-left: 5vw; 
                 padding-right: 5vw;
             }
-            .large-text-area {
-                display: flex;
-                justify-content: center;
-                align-items: flex-start; /* Align items at the start of the flex container */
-                flex-wrap: wrap;
-            }
-            
             .image-section-wrap {
                 float: right; /* Float the image to the right */
                 margin: 0 0 1em 1em; /* Adjust margin as needed for spacing */
-            }
-            
+            } 
             .text-content-wrap {
                 color: white;
                 font-family: 'Lora', sans-serif;
@@ -328,11 +322,11 @@
 
 <!-- Summary of my personal life -->
 <h2>-✧-  Personal Life  -✧-</h2>
-<section class="large-text-area" style="text-align: center;">
+<section class="large-text-area2" style="text-align: center;">
     <div class="text-content">
         <p> I was born in <a href="https://www.emurun.com.au/the-australian-outback-stars/">outback</a> Australia, in a small town called Alice Springs. Due to the low levels of light pollution in central Australia, the night sky was bright and full of stars. There wasn't much to do in this small desert town, so my childhood and teenage years were spent laying in the sand at night and staring at the sky, which sparked my passion for astronomy. It's been my dream for a very long time to make a career out of looking up at the night sky ~✧ <br><br><br></p>
     </div>
-    
+</section>
 <!-- Footer box with ESO and UQ logos and update date -->
     
 <div class="footer-box" style="background: linear-gradient(to top, rgba(0, 0, 139, 0.6), rgba(101, 51, 166,0.6)); padding: 1vw; display: flex; justify-content: space-between; align-items: flex-end;">
