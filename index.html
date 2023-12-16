@@ -158,12 +158,6 @@
                 font-size: 0.6em;
                 color: rgba(255, 255, 255, 0.3);
             }
-            .large-text-area { /* Any large text areas have a padding so they don't hit the sides of the webpage */
-                display: flex;
-                justify-content: center;
-                align-items: flex-start; /* Align items at the start of the flex container */
-                flex-wrap: wrap;
-            }
             .large-text-area2 { /* Any large text areas have a padding so they don't hit the sides of the webpage */
                 flex: 1;
                 padding: 3vw;
@@ -175,10 +169,18 @@
                 padding-left: 5vw; 
                 padding-right: 5vw;
             }
+            .large-text-area {
+                display: flex;
+                justify-content: center;
+                align-items: flex-start;
+                flex-wrap: wrap;
+            }
+            
             .image-section-wrap {
-                float: right; /* Float the image to the right */
-                margin: 0 0 1em 1em; /* Adjust margin as needed for spacing */
-            } 
+                margin-left: auto; /* Align to the right by pushing it to the end of the container */
+                margin: 0 0 1em 1em;
+            }
+            
             .text-content-wrap {
                 color: white;
                 font-family: 'Lora', sans-serif;
@@ -224,11 +226,6 @@
                 display: flex;
                 justify-content: center;
             }
-/*             .image-section-wrap { 
-                display: flex;
-                justify-content: center;
-                float: right;
-            } */
             figcaption {
                 font-family: 'Lora', sans-serif;
             }
