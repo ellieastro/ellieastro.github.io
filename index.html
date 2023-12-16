@@ -29,6 +29,7 @@
                 flex-direction: column;
                 flex: 1;
             }
+            
             .top-section img { /* Adjusting the size of my photograph based on the dimensions of the mobile webpage */
                 max-width: 70vw;
                 margin-right: 0;
@@ -117,7 +118,6 @@
         /* Section to describe how the format will change for the PC version */
         @media (min-width: 769px) {
             .top-section { /* Header including background with gradient */
-                /*background: linear-gradient(to bottom, darkblue, rgb(0, 165, 150));*/
                 background-image: url('Website/Gaia_MW.jpg');
                 background-size: cover;
                 background-position: center;
@@ -125,6 +125,15 @@
                 display: flex; 
                 align-items: center; 
                 flex: 1;
+            }
+            .top-section::after { /* Use ::after pseudo-element for the image credit */
+                content: "Image credit: Gaia DPAC, University of Lisbon, Fork Research, Portugal";
+                position: absolute;
+                bottom: 0;
+                right: 0;
+                padding: 1em;
+                font-size: 0.8em;
+                color: rgba(255, 255, 255, 0.5); /* Opacity set to 0.5 */
             }
             .large-text-area { /* Any large text areas have a padding so they don't hit the sides of the webpage */
                 flex: 1;
@@ -208,7 +217,7 @@
 <div class="top-section">
     <img src="Website/avatar-circle.png" alt="Ellen Leitinger" style="width: 30vw; justify-content: center;">
     <div class="text-content" style="text-align: center;">
-        <h1><br>Ellen Leitinger<br>(Ellie)<br><br></h1>
+        <h1>Ellen Leitinger<br>(Ellie)<br><br></h1>
         <p>PhD student in Astrophysics<br><br></p>
         <p>University of Queensland, <em>Brisbane, Australia</em><br>European Southern Observatory, <em>Garching, Germany</em><br><br></p>
         <p>ellen.leitinger@uq.net.au</p> 
