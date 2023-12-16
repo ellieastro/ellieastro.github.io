@@ -89,6 +89,9 @@
             h2 { /* Centre the headers */
                 text-align: center;
             }
+            .smaller-text {
+                opacity: 0.8;
+            }
             .footer { /* Set the conditions for creating a footer box */
                 display: flex; 
                 justify-content: left; 
@@ -161,6 +164,9 @@
             h2 { /* Centre the headers */
                 text-align: center;
             }
+            .smaller-text {
+                opacity: 0.8;
+            }
             img { /* Format the images */
                 max-width: 50vw;
                 height: auto;
@@ -202,7 +208,7 @@
 <div class="top-section">
     <img src="Website/avatar-circle.png" alt="Ellen Leitinger" style="width: 30vw; justify-content: center;">
     <div class="text-content" style="text-align: center;">
-        <h1><br>Ellen Leitinger<br><br>(Ellie)<br><br></h1>
+        <h1><br>Ellen Leitinger<br>(Ellie)<br><br></h1>
         <p>PhD student in Astrophysics<br><br></p>
         <p>University of Queensland, <em>Brisbane, Australia</em><br>European Southern Observatory, <em>Garching, Germany</em><br><br></p>
         <p>ellen.leitinger@uq.net.au</p> 
@@ -222,7 +228,7 @@
             <p>✧ <em>Previously:</em> Reverberation mapping of Active Galactic Nuclei<br><br><br></p>
         </div>
         <!-- Creating a cute little box for the hyperlinks which sits in the middle of the page-->
-        <div class="hyperlinks-box" style="background: linear-gradient(to bottom, rgba(0, 0, 139, 0.8), rgba(101, 51, 166)); width: 50vw; margin: 0 auto;">
+        <div class="hyperlinks-box" style="background: linear-gradient(to bottom, rgba(0, 0, 139, 0.8), rgba(101, 51, 166,0.8)); width: 50vw; margin: 0 auto;">
             <br><a href="https://orcid.org/0000-0001-7144-4766">My ORCiD</a>
             <br><br><a href="https://arxiv.org/search/advanced?advanced=&terms-0-operator=AND&terms-0-term=Leitinger%2C+E&terms-0-field=author&classification-physics=y&classification-physics_archives=astro-ph&classification-include_cross_list=include&date-filter_by=all_dates&date-year=&date-from_date=&date-to_date=&date-date_type=submitted_date&abstracts=show&size=50&order=-announced_date_first">List of Publications</a><br><br>
         </div>
@@ -230,7 +236,7 @@
 </section>
 
 <!-- Summary of research section with GC montage image -->
-<h2><br>-✧-  Current Research  -✧-</h2>
+<h2>-✧-  Current Research  -✧-</h2>
 <section class="large-text-area" style="text-align: center;">
     <div class="text-content">
         <p>My PhD research primarily focuses on the observational analysis of the multiple stellar populations present within my selected sample of 30 Galactic Globular Clusters (GCs). To gain a wide-field view of each GC, I employed a two-fold approach. To target the central regions of the cluster, I used <a href="https://archive.stsci.edu/prepds/hugs/"> Hubble Space Telescope photometry</a>. To observe the outer regions, I used ground-based photometry from the extensive catalogue provided by <a href="https://arxiv.org/abs/1902.09925"> Stetson et al. (2019)</a>. Using this combination of photometric data, I separated the stars into their respective multiple populations and determined their spatial distributions within the cluster. <br><br>This investigation sought to determine whether any of the stellar populations exhibited central concentration. The homogeneous analysis of this large sample of diverse GCs revealed a wide range of spatial distributions, further advancing our understanding of the possible formation scenarios of GCs and the mysterious multiple stellar populations they contain. For more information on this section of my PhD project, see my recent <a href="https://arxiv.org/abs/2301.04166">paper</a>. <br><br><br></p>
@@ -238,15 +244,15 @@
     <div class="image-section">
         <figure>
             <img src="Website/GCs.png" alt="GC image">
-            <div class = "figcaption">
-                <br>The sample of 30 Galactic Globular Clusters used in my research.<br>Images were obtained from <a href="https://people.smp.uq.edu.au/HolgerBaumgardt/globular/">The Galactic Globular Cluster Database</a>, with specific image credits listed within.
-            </div>
+            <figcaption>
+                <small class="smaller-text">The sample of 30 Galactic Globular Clusters used in my research.<br>Images were obtained from <a href="https://people.smp.uq.edu.au/HolgerBaumgardt/globular/">The Galactic Globular Cluster Database</a>, with specific image credits listed within.</small>
+            </figcaption>
         </figure>
     </div>
 </section>
 
 <!-- Summary of outreach and teaching section -->
-<h2><br>-✧-  Scientific Outreach and Teaching  -✧-</h2>  
+<h2>-✧-  Scientific Outreach and Teaching  -✧-</h2>  
 <section class="large-text-area" style="text-align: center;">
     <div class="text-content">
         <p> Throughout my degree, I've participated in outreach events as a science demonstrator for <a href="https://www.uq.edu.au/news/video/demo-troupe-tours-regional-schools"> Demo Troupe</a> at the University of Queensland, which demonstrates the physics of exciting phenomena such as Tesla Coils and Superconductors in the format of live shows. I have also assisted in organising and tutoring the <a href="https://smp.uq.edu.au/junior-physics-odyssey"> Junior Physics Odyssey</a> at the University of Queensland - a program which encourages High School students to pursue an interest in physics by demonstrating popular physics experiments and providing support and feedback on their problem-solving skills. The same format was also implemented in the <a href="https://smp.uq.edu.au/article/2023/07/astrophysics-work-experience-program-2023"> Astrophysics work experience program</a> at the university, for which I supervised 8 High School students.<br><br>During my undergraduate degree I have also spent 5 years as a tutor employed by the University of Queensland to lead tutorials, workshops and laboratory experiments in the topics of Electromagnetism and Modern Physics, Theory and Practice in Science, the Physical Basis of Biological Systems and Numerical Methods in Computational Science. During tutorials and workshops, tutors are expected to give short lectures and assist undergraduate students in problem solving. Laboratory tutors carry out these same duties, as well as demonstrations and supervision of a range of physics experiments. Tutors are also employed by the university as grading assistants, providing the marks and feedback on assignments and laboratory reports. Additionally, I spent 2 years employed by the university as a Physics Laboratory Assistant, which also required me to assemble a wide range of experiments for first, second and third year physics courses, with each course requiring 3-5 different experiments per semester. During my honours degree I was also elected Communications Officer of the University of Queensland's Physics Club: <a href="https://www.uqu.com.au/club/uq-physics-club"> PAIN</a> for the duration of one year, focusing on the organisation and advertising of weekly physics-related campus events and the annual stargazing retreat: Astrocamp.<br><br><br></p>
@@ -263,7 +269,7 @@
 </section>
 
 <!-- Summary of my personal life -->
-<h2><br>-✧-  Personal Life  -✧-</h2>
+<h2>-✧-  Personal Life  -✧-</h2>
 <section class="large-text-area" style="text-align: center;">
     <div class="text-content">
         <p> I was born in <a href="https://www.emurun.com.au/the-australian-outback-stars/">outback</a> Australia, in a small town called Alice Springs. Due to the low levels of light pollution in central Australia, the night sky was bright and full of stars. There wasn't much to do in this small desert town, so my childhood and teenage years were spent laying in the sand at night and staring at the sky, which sparked my passion for astronomy. It's been my dream for a very long time to make a career out of looking up at the night sky ~✧ <br><br><br></p>
