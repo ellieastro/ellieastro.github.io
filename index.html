@@ -143,13 +143,13 @@
                 background-image: url('Website/Gaia_MW.jpg');
                 background-size: cover;
                 background-position: center;
-                padding: 3vw;
+                padding: 2vw;
                 display: flex; 
                 align-items: center;
                 justify-content: center;
                 flex-direction: row; 
                 position: relative;
-                gap: 7vw; 
+                gap: 12vw; 
             }
             .top-section::after { /* Use ::after pseudo-element for the image credit */
                 content: "Image credit: Gaia DPAC";
@@ -159,10 +159,19 @@
                 font-size: 0.6em;
                 color: rgba(255, 255, 255, 0.3);
             }
-            .text-section { /* Text section for the header so that text is aligned on the right */
+            .text-section { /* Text sections for the header so that text is aligned on the right */
                 text-align: right; 
                 color: aliceblue;
                 max-width: 40%; 
+            }
+            .text-content .bologna-text {
+                font-size: 1em; 
+/*                 font-weight: bold; */
+/*                 margin-bottom: 0.2em; */
+            }
+            .text-content .previous-institutions {
+                font-size: 0.8em; 
+/*                 margin-top: 0.2em; */
             }
             .large-text-area2 { /* Any large text areas have a padding so they don't hit the sides of the webpage */
                 flex: 1;
@@ -264,9 +273,10 @@
     <img src="Website/avatar-circle.png" alt="Ellen Leitinger" style="width: 25vw; justify-content: center;">
         <div class="text-section">
             <div class="text-content" style="text-align: center;">
-            <h1>Ellen Leitinger<br>(Ellie)<br></h1>
-            <p>Post doctoral researcher in Astrophysics<br><br><br><br></p>
-            <p>University of Bologna, <em>Bologna, Italy</em><br><br>Previously: University of Queensland, <em>Brisbane, Australia</em><br>European Southern Observatory, <em>Garching, Germany</em><br><br></p>
+            <h1>Ellen Leitinger<br>(Ellie)<br><br></h1>
+            <p class="bologna-text"> Post doctoral researcher in Astrophysics<br><br><br></p>
+            <p class="bologna-text">University of Bologna, <em>Bologna, Italy</em><br> </p>
+            <p class="previous-institutions"> Previously: University of Queensland, <em>Brisbane, Australia</em><br>European Southern Observatory, <em>Garching, Germany</em><br><br></p>
             <p>uqeleiti@uq.edu.au</p> 
         </div>
     </div>
