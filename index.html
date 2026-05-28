@@ -232,14 +232,14 @@
             body, p, h1, h2, h3, a { /* Set the text colour to be white for all the text elements */
                 color: lavender;
             }
-            a { /* Set the hyperlink color to light blue and remove the underline */
+            a, a2 { /* Set the hyperlink color to light blue and remove the underline */
                 color: deepskyblue;
                 text-decoration: none;
             }
-            a:hover {
+            a, a2:hover {
                 text-decoration: underline; /* Use underline only on the hover */
             }
-            h1, p, a { /* Adjust the margins for the header, paragraphs and hyperlinks */
+            h1, p, a, a2 { /* Adjust the margins for the header, paragraphs and hyperlinks */
                 margin: 0vw; 
             }
             h2 { /* Centre the headers */
@@ -250,6 +250,9 @@
             }
             a{
                 font-size: 1.25vw;
+            }
+            a2{
+                font-size: 1vw;
             }
             .smaller-text { /* Define the opcaity of the small text */
                 opacity: 0.8;
@@ -378,7 +381,7 @@
         <figure>
             <img src="Website/GCs.png" alt="GC image">
             <figcaption>
-                <small class="smaller-text">The 30 Milky Way globular clusters used in my research. Images were obtained from <a href="https://people.smp.uq.edu.au/HolgerBaumgardt/globular/newdata/"> The Galactic Globular Cluster Database </a>, with specific image credits listed within</small>
+                <small class="smaller-text">The 30 Milky Way globular clusters used in my research. Images were obtained from <a2 href="https://people.smp.uq.edu.au/HolgerBaumgardt/globular/newdata/"> The Galactic Globular Cluster Database </a2>, with specific image credits listed within</small>
             </figcaption>
         </figure>
         <figure>
